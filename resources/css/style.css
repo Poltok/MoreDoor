@@ -1,24 +1,51 @@
-nav {
-
-	font-size: 14px;
-}
-
-.dropdown {
-
-
-	font-style: italic;
-}
 
 body {
-background-image: url("resources/images/bodybackground.png");
+	//*background-image: url(../../resources/images/bodybackground.png);*/
 }
 
 .dws-menu *{
 margin:0;
 padding: 0;
+list-style:none;
+}
+
+.dws-menu > ul {
+	display: flex;
+	justify-content: center;
 }
 
 header {
-	margin: 200px;
+	margin: 100px;
 	font-family: Cuprum; Arial;Helvetical;
+	font-size: 20px
+}
+
+.dws-menu > ul li a {
+	display: block;
+	background: #ececed;
+	padding: 15px 30px 15px 40px;
+	font-size: 14px;
+	color #454547;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.dws-menu > ul li {
+	position: relative;
+	border-right: 1px solid #c7c8ca;
+
+}
+.dws-menu > ul li > a i.fas {
+	position:absolute;
+	top: 40px;
+	left: 8px;
+	font-size: 20px;
+}
+
+.dws-menu > ul li:first-child {
+	border-left: 1px solid #b2b5b5;
+}
+
+.dws-menu > ul li:last-child {
+	border-right: 1px solid #b2b5b5;
 }
