@@ -1,51 +1,108 @@
-
-body {
-	//*background-image: url(../../resources/images/bodybackground.png);*/
+ *{
+	margin: 0px;
+	padding: 0px;
+  list-style: none;
 }
-
-.dws-menu *{
-margin:0;
-padding: 0;
-list-style:none;
-}
-
-.dws-menu > ul {
-	display: flex;
-	justify-content: center;
-}
-
 header {
-	margin: 100px;
-	font-family: Cuprum; Arial;Helvetical;
-	font-size: 20px
+margin-left: 100px;
+max-width: 1200px;
+background-color: #8189ca;
 }
 
-.dws-menu > ul li a {
-	display: block;
-	background: #ececed;
-	padding: 15px 30px 15px 40px;
-	font-size: 14px;
-	color #454547;
-	text-decoration: none;
-	text-transform: uppercase;
+.main-menu *{
+
+  font-family: 'PT Serif', serif;
+  font-size: 14px;
+}
+.main-menu div>ul{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 100px;
+  border: 1px solid black;
+  max-width: 1200px;
+  min-width: 1200px;
 }
 
-.dws-menu > ul li {
-	position: relative;
-	border-right: 1px solid #c7c8ca;
-
-}
-.dws-menu > ul li > a i.fas {
-	position:absolute;
-	top: 40px;
-	left: 8px;
-	font-size: 20px;
+.main-menu li{
+  border-right: 0px;
+  position: relative;
+  min-width: 150px;
+  max-width: 150px;
+  text-align: center;
+  background: #383c54;
 }
 
-.dws-menu > ul li:first-child {
-	border-left: 1px solid #b2b5b5;
+.main-menu a{
+  display: block;
+  font-size: 15px;
+  color:#fff;
+  text-decoration: none;
+  padding-top: 10px;
+  height: 30px;
+  transition: all .5s;
 }
 
-.dws-menu > ul li:last-child {
-	border-right: 1px solid #b2b5b5;
+.main-menu a:hover {
+  background: #808291;
+}
+.main-menu i{
+padding-right: 5px;
+}
+.main-menu ul ul{
+  position: absolute;
+  display: none;
+  padding:0;
+  margin: 0;
+  top: 40px;
+}
+.main-menu ul li:hover ul{
+  display:block;
+}
+.first-block {
+  display: flex;
+  min-width: 1200px;
+}
+.image1 {
+  margin-top: 20px;
+  margin-left: 100px;
+  width: 1200px;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 5px solid white;
+}
+.image1 img {
+  width: 1200px;
+  margin-top: -220px;
+}
+.second-block {
+  display: flex;
+  min-width: 1200px;
+}
+.image2 {
+  margin-left: 100px;
+  width: 595px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image2 img {
+  width: 595px;
+}
+
+.image3 {
+  border-left: 5px solid white;
+  width: 600px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image3 img {
+  width: 600px;
+}
+
+footer {
+    margin-top: 20px;
+    margin-left: 100px;
+    max-width: 1200px;
+    background-color: #8189ca;
 }
